@@ -15,7 +15,7 @@ from Utils import normalization, doPCA, modelStatsRecord, averageAccuracy, zeroP
 from keras.optimizers import Adam, SGD, Adadelta, RMSprop, Nadam
 from keras.callbacks import ReduceLROnPlateau
 import time
-import IN_net, test3_spa, spatial, basic_net
+import IN_net
 # import spectral
 np.random.seed(1337)
 
@@ -224,16 +224,6 @@ for num in range(NUM):
         x_test = x_test_all[:-VAL_SIZE]
         x_test1 = x_test_all1[:-VAL_SIZE]
         y_test = y_test[:-VAL_SIZE]
-
-        # x_test = x_test_all
-        # x_test1 = x_test_all1
-        # y_test = y_test
-        # print("x_train shape :", x_train.shape)
-        # print("y_train shape :", y_train.shape)
-        # print('x_val shape :', x_val.shape)
-        # print('y_val shape :', y_val.shape)
-        # print("x_test shape :", x_test.shape)
-        # print("y_test shape :", y_test.shape)
 
         print("x_train shape :", x_train.shape, x_train1.shape)
         print("y_train shape :", y_train.shape)
