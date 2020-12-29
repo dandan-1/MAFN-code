@@ -15,7 +15,7 @@ from Utils import normalization, doPCA, modelStatsRecord, averageAccuracy, zeroP
 from keras.optimizers import Adam, SGD, Adadelta, RMSprop, Nadam
 from keras.callbacks import ReduceLROnPlateau
 import time
-import IN_net, test3_ksc,ksc_net, ksc_bamspa,ksc_basic, ksc_bam,ksc_unfusion
+import ksc_net
 np.random.seed(1337)
 
 
