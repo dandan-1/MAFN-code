@@ -1,7 +1,3 @@
-'''
-把中间的卷积层都去掉了，使用了三个残差块
-'''
-
 import keras
 from keras.models import Model
 from keras.layers.advanced_activations import PReLU, LeakyReLU
